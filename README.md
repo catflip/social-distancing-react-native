@@ -91,6 +91,7 @@ setelah itu tambah meta-data di ```android/app/src/main/AndroidManifest.xml``` p
  <meta-data
      android:name="com.google.android.geo.API_KEY"
      android:value="Api key anda disini"/>
+      <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 ```
 
 sekarang buka ```App.js``` anda lalu hapus semua kodingan dan ganti dengan kode berikut
