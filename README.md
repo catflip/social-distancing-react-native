@@ -1,0 +1,1 @@
+# gps-tracking-covid-react-native
