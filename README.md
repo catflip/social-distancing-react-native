@@ -91,13 +91,49 @@ setelah itu tambah meta-data di ```android/app/src/main/AndroidManifest.xml``` p
      android:value="Api key anda disini"/>
 ```
 
-sekarang buka ```App.js``` anda lalu tambahkan import pada bagian atas
+sekarang buka ```App.js``` anda lalu hapus semua kodingan dan ganti dengan kode berikut
 
 ```
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'; 
+export default function App() {
+  return (
+
+    <View style={styles.container}>
+     <MapView
+       provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+       style={styles.map}
+       region={{
+         latitude: 37.78825,
+         longitude: -122.4324,
+         latitudeDelta: 0.015,
+         longitudeDelta: 0.0121,
+       }}
+     >
+     </MapView>
+   </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    ...StyleSheet.absoluteFillObject,
+    height: "100%",
+    width: 400,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+ });
+ 
 ```
 
-![s](https://imgur.com/download/BY0ns3x)
+lalu anda akan mendapatkan maps seperti dibawah ini
+
+![s](https://imgur.com/download/AZ3YjU0)
 
 
 
