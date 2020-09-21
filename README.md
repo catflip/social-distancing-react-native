@@ -9,6 +9,8 @@ link youtube:
 - ANDROID SDK
 - NODE.JS
 - OS UBUNTU/WINDOWS/MAC di tutorial ini saya menggunakan ubuntu 20.04
+- FIREBASE
+- GOOGLE MAPS API KEY
 
 1. Pertama tama kita install "expo" yaitu piranti yang digunakan untuk membuat template react native
 
