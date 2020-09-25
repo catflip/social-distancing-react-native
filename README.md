@@ -138,12 +138,65 @@ lalu anda akan mendapatkan maps seperti dibawah ini
 
 ![s](https://imgur.com/download/AZ3YjU0)
 
+8. Sekarang kita buat firebase nya, firebase disini digunakan untuk mendapatkan koordinat dan juga apakah kita online atau tidak. Untuk melakukan ini kita harus punya akun firebase pertama tama buka firebase console https://console.firebase.google.com/
+
+klik icon android karena kita akan membuat aplikasi android
+
+![s](https://imgur.com/download/mzmEp8n)
+
+beri nama package android sesuai nama di AndroidManifest.xml
+
+![s](https://imgur.com/download/wWxPbUM)
+
+![s](https://imgur.com/download/MJmcIEe)
+
+setelah itu klik "Register App" lalu anda akan mendapatkan google-services.json download file tersebut lalu letakkan pada folder android/app
+
+![s](https://imgur.com/download/yr0pwAJ) 
+
+masukkan kode berikut ke android/build.gradle
+
+```
+ buildscript {
+  dependencies {
+    // ... other dependencies
+    classpath 'com.google.gms:google-services:4.3.3'
+    // Add me --- /\
+  }
+}
+```
+lalu tambahkan kode berikut ke dalam android/app/build.gradle
+
+```
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services' // <- Add this line
+```
+
+setelah itu run kode berikut 
+
+```
+npx react-native run-android
+```
+
+setelah selesai buka aplikasi expo kembali setelah itu kita jalankan perintah berikut untuk menginstall library realtime database
+
+```
+yarn add @react-native-firebase/database
+expo start
+```
+
+lalu jalankan expo dan scan barcodenya
+
+9. 
+
 
 
 
 # Referensi
 
 https://github.com/react-native-community/react-native-maps/
+
+https://rnfirebase.io/
 
 
 

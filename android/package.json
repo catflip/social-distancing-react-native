@@ -8,6 +8,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/geolocation": "^2.0.2",
+    "@react-native-firebase/app": "^8.4.3",
+    "@react-native-firebase/database": "^7.5.7",
     "expo": "~38.0.9",
     "expo-splash-screen": "^0.5.0",
     "expo-status-bar": "^1.0.0",
@@ -17,10 +20,12 @@
     "react-native": "~0.62.2",
     "react-native-gesture-handler": "~1.6.1",
     "react-native-maps": "0.27.1",
+    "react-native-permissions": "^2.2.1",
     "react-native-reanimated": "~1.9.0",
     "react-native-screens": "~2.9.0",
     "react-native-unimodules": "~0.10.1",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
